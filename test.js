@@ -1,5 +1,5 @@
 /**
- * Locket RevenueCat VIP & Celebrity Interceptor for Shadowrocket
+ * 🌸 KAWAII LOCKET VIP & CELEBRITY INTERCEPTOR (FAIL-SAFE) test
  * URL: https://raw.githubusercontent.com/kien234/tests/refs/heads/main/test.js
  */
 
@@ -57,8 +57,9 @@ if (body) {
 
     $done({ body: JSON.stringify(obj) });
   } catch (e) {
-    $done({});
+    // Trả lại response gốc nếu có lỗi để không bị kẹt trang cá nhân
+    $done({ body });
   }
 } else {
-  $done({});
+  $done({ body });
 }
